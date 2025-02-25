@@ -1,23 +1,43 @@
 #include<iostream>
-
 using namespace std;
 
-int main(){
-
-int sensor;
-cout << "press 1 for open" << endl;
-cout << "press 0 for close" << endl;
-cout << "choice: ";
-cin >> sensor;
-
-if(sensor==1)
+int main()
 {
-    cout <<"please open the door ";
+	int a = 10;
+	int b = 8;
+	int c = 5;
+	
+	if(a > b)
+	{
+		if(a > c)
+		{
+			cout << " a is greatter" << endl;
+		}
+		else
+		{
+			cout << " c is greatter" << endl;
+		}
+	}
+	
+	
+	
+	
+	
+	else
+	{
+		if(b > c)
+		{
+			cout << " b is greatter" << endl;
+		}
+		else
+		{
+			cout << " c is greatter" << endl;
+		}
+	}
+	
+	
+	
+	
+	
+	return 0;
 }
-else if(sensor==0){
-    cout <<"please close thedoor ...!";
-}
-
-return 0;
-
-} 
