@@ -15,31 +15,31 @@ int main()
 	
 	if(marks > 90)
 	{
-		cout << "your grade is A++" << endl;
+		cout << "your grade is A" << endl;
 		grade= 'A';
 	}
-	else if (marks > 80)
+	else if (marks > 70)
 	{
-		cout << "your grade is A" << endl;
+		cout << "your grade is B" << endl;
 		grade= 'B';
 	}
 	
-	else if (marks > 70)
+	else if (marks > 55)
 	{
-		cout << "your grade is B++" << endl;
+		cout << "your grade is C" << endl;
 		grade= 'C';
 	}
 	
-	else if (marks > 60)
+	else if (marks > 30)
 	{
-		cout << "your grade is B" << endl;
+		cout << "your grade is D" << endl;
 		grade= 'D';
 	}
 	
-	else if (marks > 50)
+	else if (marks < 30)
 	{
-		cout << "your grade is C" << endl;
-		grade= 'E';
+		cout << "you failed in exam " << endl;
+		grade= 'F';
 	}
 	else 
 	{
@@ -58,7 +58,7 @@ int main()
 			break;
 		case 'D' : cout  <<"good" ;
 			break;
-		case 'E' : cout  <<"super" ;
+		case 'F' : cout  <<"TRY AGAIN" ;
 			break;
 		default : cout << "better luck...next time...!";	
 	}
