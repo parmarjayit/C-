@@ -2,33 +2,24 @@
 
 using namespace std;
 
+int first(int n)
+{
+	return n*n;
+}
+
+int cube(int n)
+{
+	return n*n;
+}
+
 int main()
 {
-	int arr[3][3] =
-	{
-		{11, 12, 13},
-		{14, 15, 16},
-		{17, 18, 19}
-	};
 	
-	int size = sizeof(arr) / sizeof(arr[0][0]);
+	int num = 4;
 	
-	int sum = 0;
+	cout <<  "power of " << first(num) << endl;
+	cout <<  "power of " << first(10) << endl;
+	cout << "------------------------- "<< endl;
 	
-	for(int i=0; i<3; i++)
-	{
-		for(int j=0; j<3; j++)
-		{
-			sum = sum + arr[i][j] ;
-		}
-		
-	}
-	int avg = sum/size ;
-	cout << avg;
-	
-	
-	
-	
-	
-	return 0;
+	cout << "cube:" << cube(27) << endl;
 }
