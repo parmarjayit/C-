@@ -1,25 +1,20 @@
 #include <iostream>
 
-using namespace std;
+using namespace std ;
 
-int first(int n)
-{
-	return n*n;
-}
+int main(){
 
-int cube(int n)
-{
-	return n*n;
-}
+int a = 10 ;
+int b = 10 ;
+int c = 10 ;
+int d = 10 ;
 
-int main()
-{
-	
-	int num = 4;
-	
-	cout <<  "power of " << first(num) << endl;
-	cout <<  "power of " << first(10) << endl;
-	cout << "------------------------- "<< endl;
-	
-	cout << "cube:" << cube(27) << endl;
+
+cout << &a <<endl;
+cout << &b <<endl;
+cout << &c <<endl;
+cout << &d <<endl;
+
+
+    return 0;
 }
