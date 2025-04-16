@@ -1,48 +1,45 @@
 #include <iostream>
-
+#include <string.h>
 
 using namespace std;
 
-
-class user 
+class product 
 {
-	private:
-	
-	   int no;
-	
 	public:
-	
-		int roll;
+	  char name[10];
+	  int price;
+	  float rate;
 		
-	public:
-	
-		user shownum(int no)
-		{
-			cout << " this fun is public " << endl;
-			this->no = no;
-		}
-		
-		user getnum()
-		{
-			cout << this->no << endl;
-		}
-	
 	
 };
-
-
 
 int main()
 {
 	
-	user user1, user2;
+	int size;
+	cout << " size: " ;
+	cin >> size;
 	
-	user1.shownum(50);
-	user2.shownum(235);
+		product item[size];
+		
+		for(int i=0; i<size; i++)
+		{
+			cout << " name: ";
+			cin >> item[i].name;
+			cout << " price: ";
+			cin >> item[i].price;
+			cout << " rate: ";
+			cin >> item[i].rate;
+		}
+		
+		
+		for(int i=0; i<size; i++)
+		{
+			cout <<"--------------------------" << endl;
+			cout << " | " << item[i].name << " | " <<item[i].price << " | " << item[i].rate << " | " << endl;
+		}
 	
-	user2.getnum();
-	user1.getnum();
 	
 	
-	return 0;
+	return 0;	
 }
