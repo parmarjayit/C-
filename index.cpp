@@ -3,43 +3,48 @@
 
 using namespace std;
 
-class product 
+
+class animal
 {
 	public:
-	  char name[10];
-	  int price;
-	  float rate;
+	char name[100];
+	char breed[100];
+	int age;
+	char type[100];
+	
+	
+	
+	animal()
+	{
+		strcpy(this->name, "-");
+		strcpy(this->breed, "-");
+		this->age = 0;
+		strcpy(this->type, "dog");
 		
+		cout << " welcome dog..!" << endl;
+	}
+	
+	animal(char n[])
+	{
+		strcpy(this->type, n);
+	}
+	
 	
 };
 
 int main()
 {
+		animal dog1, cat("tiger"), whale("fish"), tuphy;
 	
-	int size;
-	cout << " size: " ;
-	cin >> size;
+	int a = 20;
 	
-		product item[size];
-		
-		for(int i=0; i<size; i++)
-		{
-			cout << " name: ";
-			cin >> item[i].name;
-			cout << " price: ";
-			cin >> item[i].price;
-			cout << " rate: ";
-			cin >> item[i].rate;
-		}
-		
-		
-		for(int i=0; i<size; i++)
-		{
-			cout <<"--------------------------" << endl;
-			cout << " | " << item[i].name << " | " <<item[i].price << " | " << item[i].rate << " | " << endl;
-		}
+	cout << dog1.type << endl;
+	cout << cat.type << endl;
+	cout << whale.type << endl;
+	cout << tuphy.type << endl;
 	
 	
 	
-	return 0;	
+	return 0;
 }
+
